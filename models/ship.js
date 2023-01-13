@@ -22,10 +22,14 @@ const shipSchema = new Schema({
   fuel:{
     type: Number,
     default: 100,
+    min: 0,
+    max: 100,
   },
   food: {
     type: Number,
     default: 100,
+    min: 0,
+    max: 100,
   },
   independentSteaming: Boolean,
 }, {
