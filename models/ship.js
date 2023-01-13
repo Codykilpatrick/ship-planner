@@ -6,7 +6,11 @@ const shipSchema = new Schema({
   name: String,
   owner: { type: Schema.Types.ObjectId, ref: "Profile" },
   battleGroup: { type: Schema.Types.ObjectId, ref: "Battlegroup"},
-  aor: String,
+  aor: {
+    type: String,
+    default: '2nd Fleet',
+    enum: ['3rd Fleet', '2nd Fleet', '4th Fleet', '6th Fleet', '5th Fleet', '7th Fleet']
+  },
   location: String,
   class: String,
   armament: [String],
