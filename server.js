@@ -21,6 +21,8 @@ import'./config/passport.js'
 // import routes
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
+import { router as shipsRouter } from './routes/ships.js'
+import { router as battlegroupsRouter} from './routes/battlegroups.js'
 
 // create the express app
 const app = express()
@@ -65,6 +67,8 @@ app.use(passDataToView)
 // router middleware
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
+app.use('/ships', shipsRouter)
+app.use('/battlegroups', battlegroupsRouter)
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
