@@ -1,3 +1,6 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
 <% if (user) { %> 
   <h2>Add Ship</h2>
   <form action="/ships" method="POST">
@@ -36,3 +39,5 @@
     <button type="submit">Add Ship</button>
   </form>
 <% } %>
+
+<%- include('../partials/footer') %>

@@ -11,6 +11,9 @@ const router = Router()
 //GET localhost:3000/ships
 router.get('/', shipCtrl.index)
 
+// GET localhost:3000/ships/new
+router.get('/new', shipCtrl.new)
+
 export {
   router
 }

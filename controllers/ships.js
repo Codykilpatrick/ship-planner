@@ -1,7 +1,6 @@
 import { Ship } from "../models/ship.js"
 
 function index(req, res){
-  console.log("We go to ships!");
   Ship.find({})
   .then(ships => {
     console.log(ships);
@@ -17,6 +16,15 @@ function index(req, res){
   })
 }
 
+function newShip(req, res){
+  console.log("New shippy!");
+  res.render('ships/new', {
+    title: 'Add Ship',
+    user: req.user ? req.user : null, 
+  })
+}
+
 export {
   index,
+  newShip as new
 }
