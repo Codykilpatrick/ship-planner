@@ -1,0 +1,38 @@
+<% if (user) { %> 
+  <h2>Add Ship</h2>
+  <form action="/ships" method="POST">
+    <label>
+      Name: 
+      <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>
+      Class:
+      <input type="text" name="class" autocomplete="off">
+    </label>
+    <label>
+      Fuel:
+      <input type="number" name="fuel" autocomplete="off">
+    </label>
+    <label>
+      Food:
+      <input type="number" name="food" autocomplete="off">
+    </label>
+    <label>
+      Battlegroup:
+      <input type="number" name="battlegroup" autocomplete="off">
+    </label>
+    <label>
+      Armament:
+      <input type="number" name="armament" autocomplete="off">
+    </label>
+    <label>
+      Ammo Remaining:
+      <input type="number" name="fuel" autocomplete="off">
+    </label>
+    <label>
+      Tasking:
+      <input type="number" name="fuel" autocomplete="off">
+    </label>
+    <button type="submit">Add Ship</button>
+  </form>
+<% } %>

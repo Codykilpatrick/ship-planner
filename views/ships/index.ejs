@@ -3,6 +3,14 @@
 
 <main>
   <h1>Ships</h1>
+  <ul>
+    <% ships.forEach(ship => { %>
+      <li>
+        <a href="/ships/<%= ship._id %>"><%= ship.name %></a>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/ships/new">Add Ship</a>
 </main>
 
 <%- include('../partials/footer') %>

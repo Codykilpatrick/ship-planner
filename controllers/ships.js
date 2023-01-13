@@ -4,6 +4,7 @@ function index(req, res){
   console.log("We go to ships!");
   Ship.find({})
   .then(ships => {
+    console.log(ships);
     res.render('ships/index', {
       ships,
       title: "Ships",
