@@ -25,7 +25,17 @@ function newShip(req, res){
 }
 
 function create(req, res){
-  console.log(req.body);
+  for (const key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
+  Ship.create(req.body)
+  .then(ship => {
+    res.redirect('/ships')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/ships')
+  })
 }
 
 export {

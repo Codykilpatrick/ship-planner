@@ -2,14 +2,51 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>Ships</h1>
-  <ul>
-    <% ships.forEach(ship => { %>
-      <li>
-        <a href="/ships/<%= ship._id %>"><%= ship.name %></a>
-      </li>
-    <% }) %>
-  </ul>
+  <h1>Movie List</h1>
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Battlegroup</th>
+        <th>AOR</th>
+        <th>Location</th>
+        <th>Class</th>
+        <th>Armament</th>
+        <th>Ammo</th>
+        <th>Tasking</th>
+        <th>Fuel</th>
+        <th>Food</th>
+        <th>Independent Steaming</th>
+        <th>Days underway</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% ships.forEach((ship) => { %>
+      <tr>
+        <td><%= ship.name %></td>
+        <td><%= ship.battlegroup %></td>
+        <td><%= ship.aor %></td>
+        <td><%= ship.location %></td>
+        <td><%= ship.class %></td>
+        <td><%= ship.armament %></td>
+        <td><%= ship.ammo %></td>
+        <td><%= ship.tasking %></td>
+        <td><%= ship.fuel %>%</td>
+        <td><%= ship.food %>%</td>
+        <td><%= ship.independentSteaming%></td>
+        <td><%= ship.daysUnderway %></td>
+        <td></td>
+        <td>
+          <form action="/ships/<%= ship._id %>?_method=DELETE" method="POST">
+            <button>X</button>
+          </form>
+        </td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
   <a href="/ships/new">Add Ship</a>
 </main>
 
