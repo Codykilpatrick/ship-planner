@@ -12,12 +12,21 @@ const shipSchema = new Schema({
     enum: ['3rd Fleet', '2nd Fleet', '4th Fleet', '6th Fleet', '5th Fleet', '7th Fleet']
   },
   location: String,
-  class: String,
+  class: {
+    type: String,
+    enum: ['DDG', 'CG', 'CVN', 'SSN', 'SSBN', 'SSGN']
+  },
   armament: [String],
   ammo: [String],
   tasking: String,
-  fuel: Number,
-  food: Number,
+  fuel:{
+    type: Number,
+    default: 100,
+  },
+  food: {
+    type: Number,
+    default: 100,
+  },
   independentSteaming: Boolean,
 }, {
   timestamps: true
