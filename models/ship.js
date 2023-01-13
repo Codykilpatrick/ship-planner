@@ -3,7 +3,10 @@ import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
 const shipSchema = new Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true,
+  },
   owner: { type: Schema.Types.ObjectId, ref: "Profile" },
   battleGroup: { type: Schema.Types.ObjectId, ref: "Battlegroup"},
   aor: {
@@ -14,7 +17,7 @@ const shipSchema = new Schema({
   location: String,
   class: {
     type: String,
-    enum: ['DDG', 'CG', 'CVN', 'SSN', 'SSBN', 'SSGN']
+    enum: ['DDG', 'CG', 'CVN', 'SSN', 'SSBN', 'SSGN'],
   },
   armament: [String],
   ammo: [String],
@@ -32,6 +35,7 @@ const shipSchema = new Schema({
     max: 100,
   },
   independentSteaming: Boolean,
+  daysUnderway: Number,
 }, {
   timestamps: true
 })

@@ -14,6 +14,10 @@ router.get('/', shipCtrl.index)
 // GET localhost:3000/ships/new
 router.get('/new', shipCtrl.new)
 
+//POST localhost:3000/ships
+router.post('/', shipCtrl.create)
+
+
 export {
   router
 }

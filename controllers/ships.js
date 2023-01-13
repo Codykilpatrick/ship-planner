@@ -24,7 +24,12 @@ function newShip(req, res){
   })
 }
 
+function create(req, res){
+  console.log(req.body);
+}
+
 export {
   index,
-  newShip as new
+  newShip as new,
+  create
 }
