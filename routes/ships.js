@@ -17,6 +17,9 @@ router.get('/new', shipCtrl.new)
 //POST localhost:3000/ships
 router.post('/', shipCtrl.create)
 
+//DELETE localhost:3000/ships/:id
+router.delete('/:id', shipCtrl.delete)
+
 
 export {
   router

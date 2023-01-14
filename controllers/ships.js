@@ -39,8 +39,20 @@ function create(req, res){
   })
 }
 
+function deleteShip(req, res){
+  Ship.findByIdAndDelete(req.params.id)
+  .then(ship => {
+    res.redirect('/ships')
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/ships')
+  })
+}
+
 export {
   index,
   newShip as new,
-  create
+  create,
+  deleteShip as delete,
 }
