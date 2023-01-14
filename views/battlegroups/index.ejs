@@ -13,9 +13,27 @@
       </tr>
     </thead>
     <tbody>
-      
+
     </tbody>
   </table>
+
+    <h2>Add Battle Group</h2>
+    <form action="/battlegroups" method="POST">
+      <label>
+        Name: 
+        <input type="text" name="name" autocomplete="off">
+      </label>
+      <label for="aor-select">AOR:</label>
+      <select name="aor" id="aor-select"> 
+        <option value="3rd Fleet">3rd Fleet</option>
+        <option value="2nd Fleet">2nd Fleet</option>
+        <option value="4th Fleet">4th Fleet</option>
+        <option value="6th Fleet">6th Fleet</option>
+        <option value="5th Fleet">5th Fleet</option>
+        <option value="7th Fleet">7th Fleet</option>
+      </select>
+      <button type="submit">Add Battlegroup</button>
+    </form>
 </main>
 
 <%- include('../partials/footer') %>

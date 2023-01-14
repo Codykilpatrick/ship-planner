@@ -5,7 +5,11 @@ const router = Router()
 
 // localhost:3000/battlegroups
 
+// GET localhost:3000/battlegroups
 router.get('/', battlegroupCtrl.index)
+
+// POST localhost:3000/battlegroups
+router.post('/', battlegroupCtrl.create)
 
 export {
   router

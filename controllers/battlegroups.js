@@ -16,7 +16,21 @@ function index(req, res){
   })
 }
 
+function create(req, res){
+  for (const key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
+  Battlegroup.create(req.body)
+  .then(battlegroup => {
+    res.redirect('/battlegroups')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/battlegroups')
+  })
+}
+
 export {
   index,
-
+  create,
 }
