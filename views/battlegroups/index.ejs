@@ -6,14 +6,21 @@
   <table id="list">
     <thead>
       <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Ships</th>
+        <th>AOR</th>
       </tr>
     </thead>
     <tbody>
-
+      <% battlegroups.forEach(battlegroup => { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+          <td><%= battlegroup.location %> </td>
+          <td><%= battlegroup.ships %> </td>
+          <td><%= battlegroup.aor %> </td>
+        </tr>
+      <% }) %>
     </tbody>
   </table>
 
@@ -22,6 +29,10 @@
       <label>
         Name: 
         <input type="text" name="name" autocomplete="off">
+      </label>
+      <label>
+        Location: 
+        <input type="text" name="location" autocomplete="off">
       </label>
       <label for="aor-select">AOR:</label>
       <select name="aor" id="aor-select"> 
