@@ -1,0 +1,55 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<% if (user) { %> 
+  <h2>Add Ship</h2>
+  <form action="/ships" method="POST">
+    <label>
+      Name: 
+      <input type="text" name="name" autocomplete="off">
+    </label>
+    <label>
+      Class:
+      <input type="text" name="class" autocomplete="off">
+    </label>
+    <label>
+      Fuel:
+      <input type="number" name="fuel" autocomplete="off">
+    </label>
+    <label>
+      Food:
+      <input type="number" name="food" autocomplete="off">
+    </label>
+    <label for="aor-select">AOR:</label>
+    <select name="aor" id="aor-select"> 
+      <option value="3rd Fleet">3rd Fleet</option>
+      <option value="2nd Fleet">2nd Fleet</option>
+      <option value="4th Fleet">4th Fleet</option>
+      <option value="6th Fleet">6th Fleet</option>
+      <option value="5th Fleet">5th Fleet</option>
+      <option value="7th Fleet">7th Fleet</option>
+    </select>
+
+    <label>
+      Armament:
+      <input type="text" name="armament" autocomplete="off">
+    </label>
+    <label>
+      Ammo Remaining:
+      <input type="text" name="ammo" autocomplete="off">
+    </label>
+    <label>
+      Tasking:
+      <input type="text" name="tasking" autocomplete="off">
+    </label>
+    <label>
+      Days underway:
+      <input type="text" name="daysUnderway" autocomplete="off">
+    </label>
+    <label for="independent-steaming-checkbox">Independent Steaming</label>
+    <input type="checkbox" name="independentSteaming" id="independent-steaming-checkbox">
+    <button type="submit">Add Ship</button>
+  </form>
+<% } %>
+
+<%- include('../partials/footer') %>

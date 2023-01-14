@@ -50,9 +50,25 @@ function deleteShip(req, res){
   })
 }
 
+function edit(req, res){
+  console.log("We edit");
+  Ship.findById(req.params.id)
+  .then(ship => {
+    res.render('ships/edit', {
+      title: "Edit ship",
+      ship: ship
+    })
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/ships')
+  })
+}
+
 export {
   index,
   newShip as new,
   create,
   deleteShip as delete,
+  edit,
 }

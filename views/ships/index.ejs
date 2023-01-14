@@ -18,7 +18,7 @@
         <th>Food</th>
         <th>Independent Steaming</th>
         <th>Days underway</th>
-        <th>Edit</th>
+        <th>Details</th>
         <th>Delete</th>
       </tr>
     </thead>
@@ -37,7 +37,9 @@
         <td><%= ship.food %>%</td>
         <td><%= ship.independentSteaming%></td>
         <td><%= ship.daysUnderway %></td>
-        <td></td>
+        <td>
+          <a href="/ships/<%= ship._id %>/edit">DETAILS</a>
+        </td>
         <td>
           <form action="/ships/<%= ship._id %>?_method=DELETE" method="POST">
             <button>X</button>

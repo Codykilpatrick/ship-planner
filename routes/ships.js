@@ -14,11 +14,16 @@ router.get('/', shipCtrl.index)
 // GET localhost:3000/ships/new
 router.get('/new', shipCtrl.new)
 
+// GET localhost:3000/ships/edit
+router.get('/:id/edit', shipCtrl.edit)
+
 //POST localhost:3000/ships
 router.post('/', shipCtrl.create)
 
 //DELETE localhost:3000/ships/:id
 router.delete('/:id', shipCtrl.delete)
+
+
 
 
 export {
