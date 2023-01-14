@@ -38,7 +38,7 @@
         <td><%= ship.independentSteaming ? 'True' : 'False'%></td>
         <td><%= ship.daysUnderway %></td>
         <td>
-          <a href="/ships/<%= ship._id %>/edit">DETAILS</a>
+          <a href="/ships/<%= ship._id %>/edit">UPDATE</a>
         </td>
         <td>
           <form action="/ships/<%= ship._id %>?_method=DELETE" method="POST">
