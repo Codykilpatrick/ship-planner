@@ -8,11 +8,15 @@
       Name: 
       <input type="text" name="name" autocomplete="off" value="<%= ship.name %>">
     </label>
-    <label>
-      Class:
-      <input type="text" name="class" autocomplete="off"
-      value="<%= ship.class %>">
-    </label>
+    <label for="class-select">Class:</label>
+      <select name="class" id="class-select"> 
+        <option value="DDG">DDG</option>
+        <option value="CG">CG</option>
+        <option value="CVN">CVN</option>
+        <option value="SSN">SSN</option>
+        <option value="SSBN">SSBN</option>
+        <option value="SSGN">SSGN</option>
+      </select>
     <label>
       Location: 
       <input type="text" name="location" autocomplete="off"
@@ -39,8 +43,8 @@
     </select>
 
     <label>
-      Armament:
-      <input type="text" name="armament" autocomplete="off" value="<%= ship.armament %>">
+      Characteristics:
+      <input type="text" name="characteristics" autocomplete="off" value="<%= ship.characteristics %>">
     </label>
     <label>
       Ammo Remaining:

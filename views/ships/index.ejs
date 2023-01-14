@@ -11,7 +11,7 @@
         <th>AOR</th>
         <th>Location</th>
         <th>Class</th>
-        <th>Armament</th>
+        <th>Characteristics</th>
         <th>Ammo</th>
         <th>Tasking</th>
         <th>Fuel</th>
@@ -30,12 +30,12 @@
         <td><%= ship.aor %></td>
         <td><%= ship.location %></td>
         <td><%= ship.class %></td>
-        <td><%= ship.armament %></td>
+        <td><%= ship.characteristics %></td>
         <td><%= ship.ammo %></td>
         <td><%= ship.tasking %></td>
         <td><%= ship.fuel %>%</td>
         <td><%= ship.food %>%</td>
-        <td><%= ship.independentSteaming%></td>
+        <td><%= ship.independentSteaming ? 'True' : 'False'%></td>
         <td><%= ship.daysUnderway %></td>
         <td>
           <a href="/ships/<%= ship._id %>/edit">DETAILS</a>

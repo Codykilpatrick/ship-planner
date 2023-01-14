@@ -19,7 +19,7 @@ const shipSchema = new Schema({
     type: String,
     enum: ['DDG', 'CG', 'CVN', 'SSN', 'SSBN', 'SSGN'],
   },
-  armament: [String],
+  characteristics: [String],
   ammo: [String],
   tasking: String,
   fuel:{
