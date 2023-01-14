@@ -3,22 +3,30 @@
 
 <% if (user) { %> 
   <h2>Add Ship</h2>
-  <form action="/ships" method="POST">
+  <form action="/ships/<%= ship._id %>?_method=PUT" method="POST">
     <label>
       Name: 
-      <input type="text" name="name" autocomplete="off">
+      <input type="text" name="name" autocomplete="off" value="<%= ship.name %>">
     </label>
     <label>
       Class:
-      <input type="text" name="class" autocomplete="off">
+      <input type="text" name="class" autocomplete="off"
+      value="<%= ship.class %>">
+    </label>
+    <label>
+      Location: 
+      <input type="text" name="location" autocomplete="off"
+      value="<%= ship.location %>">
     </label>
     <label>
       Fuel:
-      <input type="number" name="fuel" autocomplete="off">
+      <input type="number" name="fuel" autocomplete="off"
+      value="<%= ship.fuel %>">
     </label>
     <label>
       Food:
-      <input type="number" name="food" autocomplete="off">
+      <input type="number" name="food" autocomplete="off"
+      value="<%= ship.food %>">
     </label>
     <label for="aor-select">AOR:</label>
     <select name="aor" id="aor-select"> 
@@ -32,23 +40,30 @@
 
     <label>
       Armament:
-      <input type="text" name="armament" autocomplete="off">
+      <input type="text" name="armament" autocomplete="off" value="<%= ship.armament %>">
     </label>
     <label>
       Ammo Remaining:
-      <input type="text" name="ammo" autocomplete="off">
+      <input type="text" name="ammo" autocomplete="off"
+      value="<%= ship.ammo %>">
     </label>
     <label>
       Tasking:
-      <input type="text" name="tasking" autocomplete="off">
+      <input type="text" name="tasking" autocomplete="off"
+      value="<%= ship.tasking %>">
     </label>
     <label>
       Days underway:
-      <input type="text" name="daysUnderway" autocomplete="off">
+      <input type="text" name="daysUnderway" autocomplete="off"
+      value="<%= ship.daysUnderway %>">
     </label>
     <label for="independent-steaming-checkbox">Independent Steaming</label>
-    <input type="checkbox" name="independentSteaming" id="independent-steaming-checkbox">
-    <button type="submit">Add Ship</button>
+    <input 
+    type="checkbox" 
+    name="independentSteaming" 
+    <%= ship.independentSteaming ? 'checked' : '' %>
+    id="independent-steaming-checkbox" >
+    <button type="submit">Update Ship</button>
   </form>
 <% } %>
 

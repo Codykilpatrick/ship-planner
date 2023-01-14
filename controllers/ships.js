@@ -65,10 +65,25 @@ function edit(req, res){
   })
 }
 
+function update(req, res){
+  req.body.independentSteaming = !!req.body.independentSteaming
+  for (const key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
+  Ship.findByIdAndUpdate(req.params.id, req.body, {new: true})
+  .then(ship => {
+    res.redirect('/ships')
+  })
+  .catch(error => {
+    console.log(error);
+  })
+}
+
 export {
   index,
   newShip as new,
   create,
   deleteShip as delete,
   edit,
+  update,
 }
