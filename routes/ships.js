@@ -21,7 +21,6 @@ router.get('/:id/edit', shipCtrl.edit)
 router.post('/', shipCtrl.create)
 
 
-
 //PUT localhost:3000/ships/:id
 router.put('/:id', shipCtrl.update)
 

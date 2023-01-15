@@ -37,14 +37,7 @@
             </form>
           </td>
           <td>
-          <form action="/battlegroups/<%= battlegroup._id %>/ships" method="POST">
-            <select name="shipId">
-              <% ships.forEach(ship => { %>
-                <option value="<%= ship._id %>"><%= ship.name %></option>
-              <% }) %>
-            </select>
-            <button type="submit">Add to Battlegroup</button>
-          </form>
+          
         </td>
         </tr>
       <% }) %>

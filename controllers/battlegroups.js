@@ -56,7 +56,7 @@ function addShip(req, res){
     battlegroup.ships.push(req.body.shipId)
     battlegroup.save()
     .then(() => {
-      res.redirect('/battlegroups')
+      res.redirect(`/battlegroups/${req.params.id}/edit`)
     })
     .catch(error => {
       console.log(error)
@@ -69,9 +69,48 @@ function addShip(req, res){
   })
 }
 
+function edit(req, res){
+  Battlegroup.findById(req.params.id)
+  .populate('ships')
+  .then(battlegroup => {
+    Ship.find({_id: {$nin: battlegroup.ships}})
+    .then(ships => {
+      res.render('battlegroups/edit', {
+        title: "Edit battlegroup",
+        battlegroup,
+        ships,
+      })
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect("/")
+    })
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/battlegroups')
+  })
+}
+
+function removeShip(req, res){
+  Battlegroup.findById(req.params.bgid)
+  .then(battlegroup =>{
+    battlegroup.ships.remove({_id: req.params.shipid})
+    battlegroup.save()
+    res.redirect(`/battlegroups/${req.params.bgid}/edit`)
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/battlegroups')
+  })
+}
+
 export {
   index,
   create,
   deleteBattlegroup as delete,
   addShip,
+  edit,
+  removeShip,
+
 }

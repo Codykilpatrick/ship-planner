@@ -1,5 +1,35 @@
 <%- include('../partials/html-head') %>
 <%- include('../partials/nav') %>
 
+<h1>Ships</h1>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroup.ships.forEach((ship) => { %>
+    <tr>
+      <td><%= ship.name %></td>
+      <td>
+        <form action="/battlegroups/<%= battlegroup._id %>/<%= ship._id %>?_method=DELETE" method="POST">
+          <button>X</button>
+        </form>
+      </td>
+    </tr>
+    <% }) %>
+    <form action="/battlegroups/<%= battlegroup._id %>/ships" method="POST">
+      <select name="shipId">
+        <% ships.forEach(ship => { %>
+          <option value="<%= ship._id %>"><%= ship.name %></option>
+        <% }) %>
+      </select>
+      <button type="submit">Add to Battlegroup</button>
+    </form>
+  </tbody>
+</table>
+<a href="/battlegroups/new">Add Ship</a>
+</main>
 
 <%- include('../partials/footer') %>

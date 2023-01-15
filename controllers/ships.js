@@ -49,7 +49,6 @@ function deleteShip(req, res){
 }
 
 function edit(req, res){
-  console.log("We edit");
   Ship.findById(req.params.id)
   .then(ship => {
     res.render('ships/edit', {
