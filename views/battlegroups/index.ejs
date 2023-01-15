@@ -19,7 +19,13 @@
         <tr>
           <td><%= battlegroup.name %></td>
           <td><%= battlegroup.location %> </td>
-          <td><%= battlegroup.ships %> </td>
+          <td>
+          <ul>
+            <% battlegroup.ships.forEach(ship => { %>
+              <li><%= ship.name %></li>
+            <% }) %>
+          </ul>
+          </td>
           <td><%= battlegroup.aor %> </td>
           <td>
             <form action="/battlegroups/<%= battlegroup._id %>?_method=DELETE" method="POST">

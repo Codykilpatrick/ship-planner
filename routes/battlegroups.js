@@ -14,6 +14,9 @@ router.post('/', battlegroupCtrl.create)
 // DELETE localhost:3000/battlegroups/:id
 router.delete('/:id', battlegroupCtrl.delete)
 
+//POST localhost:3000/battlegroups/:id/ships
+router.post('/:id/ships', battlegroupCtrl.addShip)
+
 export {
   router
 }

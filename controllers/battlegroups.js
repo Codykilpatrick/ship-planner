@@ -50,8 +50,28 @@ function deleteBattlegroup(req, res){
   })
 }
 
+function addShip(req, res){
+  Battlegroup.findById(req.params.id)
+  .then(battlegroup => {
+    battlegroup.ships.push(req.body.shipId)
+    battlegroup.save()
+    .then(() => {
+      res.redirect('/battlegroups')
+    })
+    .catch(error => {
+      console.log(error)
+      res.redirect('/')
+    })
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/')
+  })
+}
+
 export {
   index,
   create,
   deleteBattlegroup as delete,
+  addShip,
 }
