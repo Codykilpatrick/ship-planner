@@ -10,6 +10,7 @@
         <th>Location</th>
         <th>Ships</th>
         <th>AOR</th>
+        <th>Details</th>
         <th>Delete</th>
         <th>Add ship</th>
       </tr>
@@ -27,6 +28,9 @@
           </ul>
           </td>
           <td><%= battlegroup.aor %> </td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit">UPDATE</a>
+          </td>
           <td>
             <form action="/battlegroups/<%= battlegroup._id %>?_method=DELETE" method="POST">
               <button>X</button>
