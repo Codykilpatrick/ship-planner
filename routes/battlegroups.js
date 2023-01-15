@@ -11,6 +11,9 @@ router.get('/', battlegroupCtrl.index)
 // POST localhost:3000/battlegroups
 router.post('/', battlegroupCtrl.create)
 
+// DELETE localhost:3000/battlegroups/:id
+router.delete('/:id', battlegroupCtrl.delete)
+
 export {
   router
 }

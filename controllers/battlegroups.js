@@ -30,7 +30,19 @@ function create(req, res){
   })
 }
 
+function deleteBattlegroup(req, res){
+  Battlegroup.findByIdAndDelete(req.params.id)
+  .then(battlegroup => {
+    res.redirect('/battlegroups')
+  })
+  .catch(error => {
+    console.log(error)
+    res.redirect('/battlegroups')
+  })
+}
+
 export {
   index,
   create,
+  deleteBattlegroup as delete,
 }

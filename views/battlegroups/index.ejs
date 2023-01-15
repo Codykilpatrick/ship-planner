@@ -10,6 +10,7 @@
         <th>Location</th>
         <th>Ships</th>
         <th>AOR</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -19,6 +20,11 @@
           <td><%= battlegroup.location %> </td>
           <td><%= battlegroup.ships %> </td>
           <td><%= battlegroup.aor %> </td>
+          <td>
+            <form action="/battlegroups/<%= battlegroup._id %>?_method=DELETE" method="POST">
+              <button>X</button>
+            </form>
+          </td>
         </tr>
       <% }) %>
     </tbody>
