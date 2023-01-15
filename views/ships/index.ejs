@@ -2,6 +2,7 @@
 <%- include('../partials/nav') %>
 
 <main>
+  <h1></h1>
   <h1>Ships</h1>
   <table id="list">
     <thead>
@@ -24,7 +25,10 @@
     </thead>
     <tbody>
       <% ships.forEach((ship) => { %>
-      <tr>
+        <% if (user.profile._id.toString() === ship.owner.toString()) { %>
+        <tr>
+        <td><%= user.profile._id %></td>
+        <td><%= ship.owner %></td>
         <td><%= ship.name %></td>
         <td><%= ship.battlegroup %></td>
         <td><%= ship.aor %></td>
@@ -46,6 +50,7 @@
           </form>
         </td>
       </tr>
+      <% } %>
       <% }) %>
     </tbody>
   </table>
