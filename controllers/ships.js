@@ -23,6 +23,7 @@ function newShip(req, res){
 }
 
 function create(req, res){
+  req.body.owner = req.user.profile._id
   req.body.independentSteaming = !!req.body.independentSteaming
   for (const key in req.body) {
     if (req.body[key] === '') delete req.body[key]

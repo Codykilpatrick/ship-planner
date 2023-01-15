@@ -26,6 +26,7 @@ function index(req, res){
 }
 
 function create(req, res){
+  req.body.owner = req.user.profile._id
   for (const key in req.body) {
     if (req.body[key] === '') delete req.body[key]
 	}

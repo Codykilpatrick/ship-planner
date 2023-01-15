@@ -20,7 +20,6 @@ router.delete('/:id', battlegroupCtrl.delete)
 //DELETE localhost:3000/:bgid/:shipid
 router.delete('/:bgid/:shipid', battlegroupCtrl.removeShip)
 
-
 //POST localhost:3000/battlegroups/:id/ships
 router.post('/:id/ships', battlegroupCtrl.addShip)
 
