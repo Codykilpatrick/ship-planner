@@ -55,7 +55,10 @@ function addShip(req, res){
   .then(battlegroup => {
     battlegroup.ships.push(req.body.shipId)
     battlegroup.save()
-    .then(() => {
+    Ship.findById(req.body.shipId)
+    .then(ship => {
+      ship.aor = battlegroup.aor
+      ship.save()
       res.redirect(`/battlegroups/${req.params.id}/edit`)
     })
     .catch(error => {
