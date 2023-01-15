@@ -3,17 +3,26 @@ import { Ship } from "../models/ship.js"
 
 function index(req, res){
   Battlegroup.find({})
+  .populate('ships')
   .then(battlegroups => {
-    res.render('battlegroups/index', {
-      battlegroups,
-      title: "Battlegroups",
-      user: req.user ? req.user : null, 
+    Ship.find({_id: {$nin: battlegroups.ships}})
+    .then(ships => {
+      res.render('battlegroups/index', {
+        battlegroups,
+        ships,
+        title: "Battlegroups",
+        user: req.user ? req.user : null, 
     })
   })
   .catch(err => {
     console.log(err)
     res.redirect("/")
   })
+})
+.catch(error => {
+  console.log(error)
+  res.redirect('/')
+})
 }
 
 function create(req, res){
