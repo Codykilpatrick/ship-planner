@@ -16,7 +16,8 @@
     </thead>
     <tbody>
       <% battlegroups.forEach(battlegroup => { %>
-        <tr>
+        <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
+          <tr>
           <td><%= battlegroup.name %></td>
           <td><%= battlegroup.location %> </td>
           <td>
@@ -38,7 +39,8 @@
           <td>
           
         </td>
-        </tr>
+        </tr>  
+        <% } %>
       <% }) %>
     </tbody>
   </table>

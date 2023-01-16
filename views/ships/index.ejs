@@ -27,8 +27,6 @@
       <% ships.forEach((ship) => { %>
         <% if (user.profile._id.toString() === ship.owner.toString()) { %>
         <tr>
-        <td><%= user.profile._id %></td>
-        <td><%= ship.owner %></td>
         <td><%= ship.name %></td>
         <td><%= ship.battlegroup %></td>
         <td><%= ship.aor %></td>
