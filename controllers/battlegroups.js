@@ -59,6 +59,7 @@ function addShip(req, res){
     Ship.findById(req.body.shipId)
     .then(ship => {
       ship.aor = battlegroup.aor
+      ship.battleGroup = req.params.id
       ship.save()
       res.redirect(`/battlegroups/${req.params.id}/edit`)
     })
