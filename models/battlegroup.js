@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const battlegroupSchema = new Schema({
   name: String,
-  owner: { type: Schema.Types.ObjectId, ref: "Profile" },
+  owner: [{ type: Schema.Types.ObjectId, ref: "Profile" }],
   location: String,
   ships: [{ type: Schema.Types.ObjectId, ref: 'Ship' }],
   aor: {

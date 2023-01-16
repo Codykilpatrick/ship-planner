@@ -100,9 +100,20 @@ function edit(req, res){
 function removeShip(req, res){
   Battlegroup.findById(req.params.bgid)
   .then(battlegroup =>{
+    console.log("ALERT -", battlegroup.ships);
     battlegroup.ships.remove({_id: req.params.shipid})
     battlegroup.save()
-    res.redirect(`/battlegroups/${req.params.bgid}/edit`)
+    Ship.findById(req.params.shipid)
+    .then(ship => {
+      console.log("ALERT -", ship.battleGroup);
+      ship.battleGroup.remove({_id: req.params.bgid})
+      ship.save()
+      res.redirect(`/battlegroups/${req.params.bgid}/edit`)
+    })
+    .catch(error => {
+      console.log(error);
+      res.redirect('/battlegroups')
+    })
   })
   .catch(error => {
     console.log(error)

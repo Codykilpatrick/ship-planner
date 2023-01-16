@@ -7,8 +7,8 @@ const shipSchema = new Schema({
     type: String,
     required: true,
   },
-  owner: { type: Schema.Types.ObjectId, ref: "Profile" },
-  battleGroup: { type: Schema.Types.ObjectId, ref: "Battlegroup"},
+  owner: [{ type: Schema.Types.ObjectId, ref: "Profile" }],
+  battleGroup: [{ type: Schema.Types.ObjectId, ref: "Battlegroup"}],
   aor: {
     type: String,
     default: '2nd Fleet',
