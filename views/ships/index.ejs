@@ -28,7 +28,7 @@
         <% if (user.profile._id.toString() === ship.owner.toString()) { %>
         <tr>
         <td><%= ship.name %></td>
-        <td><%= ship.battleGroup[0].name %></td>
+        <td><%= ship.battleGroup.length ? ship.battleGroup[0].name : '' %></td>
         <td><%= ship.aor %></td>
         <td><%= ship.location %></td>
         <td><%= ship.class %></td>
