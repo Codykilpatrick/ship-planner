@@ -25,6 +25,7 @@ nav {
   color: #1a1a1a;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   padding: 10px;
   min-height: 60px;
 }
