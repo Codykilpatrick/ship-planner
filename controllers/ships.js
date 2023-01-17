@@ -2,6 +2,7 @@ import { Ship } from "../models/ship.js"
 
 function index(req, res){
   Ship.find({})
+  .sort('name')
   .populate('battleGroup')
   .then(ships => {
     res.render('ships/index', {

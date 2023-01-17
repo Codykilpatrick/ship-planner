@@ -3,6 +3,7 @@ import { Ship } from "../models/ship.js"
 
 function index(req, res){
   Battlegroup.find({})
+  .sort('aor')
   .populate('ships')
   .then(battlegroups => {
     Ship.find({_id: {$nin: battlegroups.ships}})
