@@ -40,3 +40,9 @@ main {
 .right {
   margin-left: auto;
 }
+
+#google-logout{
+  background-color: white;
+  border: black 1px solid;
+  border-radius: 4px;
+}
