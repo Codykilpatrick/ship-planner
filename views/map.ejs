@@ -1,6 +1,41 @@
 <%- include('./partials/html-head') %>
 <%- include('./partials/nav') %>
 
+<main>
 <h1><%= title %> </h1>
+<h2>2nd Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "2nd Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "2nd Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+</main>
 
 <%- include('./partials/footer') %>
