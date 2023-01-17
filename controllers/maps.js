@@ -4,6 +4,7 @@ import { Ship } from "../models/ship.js"
 function index(req, res){
   Battlegroup.find({})
   .populate('ships')
+  .sort('aor')
   .then(battlegroups => {
     Ship.find({})
     .then(ships => {
