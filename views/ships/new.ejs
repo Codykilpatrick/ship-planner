@@ -7,7 +7,7 @@
   <form action="/ships" method="POST">
     <label>
       Name: 
-      <input type="text" name="name" autocomplete="off">
+      <input type="text" name="name" autocomplete="off" required="required">
     </label>
     <label for="class-select">Class:
     <select name="class" id="class-select"> 
@@ -25,11 +25,11 @@
     </label>
     <label>
       Fuel:
-      <input type="number" name="fuel" autocomplete="off">
+      <input type="number" name="fuel" autocomplete="off" min="0" max="100">
     </label>
     <label>
       Food:
-      <input type="number" name="food" autocomplete="off">
+      <input type="number" name="food" autocomplete="off" min="0" max="100">
     </label>
     <label for="aor-select">AOR:
     <select name="aor" id="aor-select"> 
