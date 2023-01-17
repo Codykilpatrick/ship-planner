@@ -27,7 +27,7 @@
     <tbody>
       <% ships.forEach((ship) => { %>
         <% if (user.profile._id.toString() === ship.owner.toString()) { %>
-        <tr>
+      <tr>
         <td><%= ship.name %></td>
         <td><%= ship.battleGroup.length ? ship.battleGroup[0].name : '' %></td>
         <td><%= ship.aor %></td>
@@ -41,7 +41,7 @@
         <td><%= ship.independentSteaming ? 'True' : 'False'%></td>
         <td><%= ship.daysUnderway %></td>
         <td>
-          <a href="/ships/<%= ship._id %>/edit">UPDATE</a>
+          <a href="/ships/<%= ship._id %>/edit" class="update">UPDATE</a>
         </td>
         <td>
           <form action="/ships/<%= ship._id %>?_method=DELETE" method="POST">
@@ -53,7 +53,7 @@
       <% }) %>
     </tbody>
   </table>
-  <a href="/ships/new">Add Ship</a>
+  <a href="/ships/new" class="update">Add Ship</a>
 </main>
 
 <%- include('../partials/footer') %>
