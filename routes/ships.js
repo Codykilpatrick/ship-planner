@@ -9,22 +9,22 @@ const router = Router()
 
 
 //GET localhost:3000/ships
-router.get('/', shipCtrl.index)
+router.get('/', isLoggedIn, shipCtrl.index)
 
 // GET localhost:3000/ships/new
-router.get('/new', shipCtrl.new)
+router.get('/new', isLoggedIn, shipCtrl.new)
 
 // GET localhost:3000/ships/edit
-router.get('/:id/edit', shipCtrl.edit)
+router.get('/:id/edit', isLoggedIn, shipCtrl.edit)
 
 //POST localhost:3000/ships
-router.post('/', shipCtrl.create)
+router.post('/', isLoggedIn, shipCtrl.create)
 
 //PUT localhost:3000/ships/:id
-router.put('/:id', shipCtrl.update)
+router.put('/:id', isLoggedIn, shipCtrl.update)
 
 //DELETE localhost:3000/ships/:id
-router.delete('/:id', shipCtrl.delete)
+router.delete('/:id', isLoggedIn, shipCtrl.delete)
 
 
 
