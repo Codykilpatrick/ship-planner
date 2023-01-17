@@ -36,6 +36,171 @@
     <% }) %>
   </tbody>
 </table>
+<h2>3rd Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "3rd Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "3rd Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>4th Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "4th Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "4th Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>5th Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "5th Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "5th Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>6th Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "6th Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "6th Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>7th Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "7th Fleet") { %>
+        <tr>
+          <td><%= battlegroup.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "7th Fleet") { %>
+        <tr>
+          <td><%= ship.name %></td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
 </main>
 
 <%- include('./partials/footer') %>
