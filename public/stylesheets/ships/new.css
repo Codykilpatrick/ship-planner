@@ -27,5 +27,24 @@ form {
   align-items: center;
 }
 form > * {
-  padding: 8px;
+  font-size: large;
+  padding: 16px;
+}
+
+input {
+  border-radius: 4px;
+}
+
+button {
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  border: 0px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: grey;
+  color: white;
 }

@@ -56,3 +56,13 @@ button {
 td {
   text-align: center;
 }
+
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+a:hover {
+  background-color: grey;
+  color: white;
+}
