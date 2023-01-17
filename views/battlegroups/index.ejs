@@ -6,6 +6,7 @@
   <table id="list">
     <thead>
       <% battlegroups.forEach(battlegroup => { %>
+        <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
         <tr>
         <th><%= battlegroup.name %></th>
         <th>Name</th>
@@ -18,7 +19,6 @@
     </thead>
     <tbody>
         <% battlegroup.ships.forEach(ship => { %>
-        <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
           <tr>
           <td></td>
           <td><%= ship.name %></td>
@@ -28,8 +28,8 @@
           <td><%= ship.fuel %></td>
           <td><%= ship.daysUnderway %></td>
         </tr>
-        <% } %>
         <% }) %>
+        <% } %>
       <% }) %>
     </tbody>
   </table>
