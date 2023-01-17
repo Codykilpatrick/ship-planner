@@ -14,7 +14,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "2nd Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -30,7 +32,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "2nd Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -47,7 +51,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "3rd Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -63,7 +69,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "3rd Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -80,7 +88,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "4th Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -96,7 +106,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "4th Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -113,7 +125,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "5th Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -129,7 +143,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "5th Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -146,7 +162,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "6th Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -162,7 +180,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "6th Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -179,7 +199,9 @@
     <% battlegroups.forEach(battlegroup => { %>
       <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "7th Fleet") { %>
         <tr>
-          <td><%= battlegroup.name %></td>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>
@@ -195,7 +217,9 @@
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "7th Fleet") { %>
         <tr>
-          <td><%= ship.name %></td>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
         </tr>
           <% } %> 
     <% }) %>

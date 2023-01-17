@@ -2,7 +2,7 @@
 <%- include('../partials/nav') %>
 
 <% if (user) { %> 
-  <h2>Add Ship</h2>
+  <h2>Edit Ship</h2>
   <form action="/ships/<%= ship._id %>?_method=PUT" method="POST">
     <label>
       Name: 
