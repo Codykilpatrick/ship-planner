@@ -15,6 +15,14 @@
         <th>Ammo</th>
         <th>Fuel</th>
         <th>Days Underway</th>
+        <th>
+          <a href="/battlegroups/<%= battlegroup._id %>/edit">UPDATE</a>
+        </th>
+        <th>
+          <form action="/battlegroups/<%= battlegroup._id %>?_method=DELETE" method="POST">
+            <button>X</button>
+          </form>
+        </th>
       </tr>
     </thead>
     <tbody>
