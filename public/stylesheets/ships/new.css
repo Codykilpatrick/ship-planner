@@ -22,10 +22,11 @@ body {
 
 form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
+
 form > * {
   font-size: large;
   padding: 16px;
@@ -48,3 +49,55 @@ button:hover {
   background-color: grey;
   color: white;
 }
+
+#head {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#head > * {
+  padding: 5px;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: repeat(1, 100%);
+  grid-template-columns: repeat(2, 50%);
+}
+
+#content > * {
+  padding: 48px;
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: fit-content;
+}
+
+#box1 > * {
+  padding: 5px;
+}
+
+#box2 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  height: fit-content;
+  width: fit-content;
+}
+
+#box2 > * {
+  padding: 5px;
+}
+
+input {
+  width: 100%;
+}
+

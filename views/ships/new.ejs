@@ -5,6 +5,7 @@
 <% if (user) { %> 
   <h2>Add Ship</h2>
   <form action="/ships" method="POST">
+    <div id="head">
     <label>
       Name: 
       <input type="text" name="name" autocomplete="off" required="required">
@@ -23,6 +24,9 @@
       Location: 
       <input type="text" name="location" autocomplete="off">
     </label>
+  </div>
+  <div id="content">
+    <div id="box1">
     <label>
       Fuel:
       <input type="number" name="fuel" autocomplete="off" min="0" max="100" placeholder="%">
@@ -31,7 +35,7 @@
       Food:
       <input type="number" name="food" autocomplete="off" min="0" max="100" placeholder="%">
     </label>
-    <label for="aor-select">AOR:
+    <label for="aor-select">AOR:</label>
     <select name="aor" id="aor-select"> 
       <option value="3rd Fleet">3rd Fleet</option>
       <option value="2nd Fleet">2nd Fleet</option>
@@ -40,11 +44,12 @@
       <option value="5th Fleet">5th Fleet</option>
       <option value="7th Fleet">7th Fleet</option>
     </select>
-    </label>
     <label>
       Characteristics:
       <input type="text" name="characteristics" autocomplete="off"placeholder="SPY, SQQ-89">
     </label>
+    </div>
+    <div id="box2">
     <label>
       Ammo Remaining:
       <input type="text" name="ammo" autocomplete="off" placeholder="Missle/Round count">
@@ -59,6 +64,8 @@
     </label>
     <label for="independent-steaming-checkbox">Independent Steaming</label>
     <input type="checkbox" name="independentSteaming" id="independent-steaming-checkbox">
+  </div>
+  </div>
     <button type="submit">Add Ship</button>
   </form>
 <% } %>
