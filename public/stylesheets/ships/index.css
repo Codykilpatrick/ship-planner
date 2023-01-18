@@ -40,10 +40,6 @@ a.update {
   color: black;
 }
 
-a:link {
-  text-decoration: none;
-}
-
 button {
   border-radius: 4px;
   background-color: white;
