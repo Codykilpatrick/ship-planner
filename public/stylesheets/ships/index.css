@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #f6f6f6;
+  background-color: black;
+  color: #40ff00c6;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -26,7 +26,7 @@ table {
 }
 
 th {
-  border-bottom: white solid 4px;
+  border-bottom: #40ff00c6 solid 4px;
 }
 
 th, td {
@@ -34,17 +34,17 @@ th, td {
 }
 
 a.update {
-  background-color: white;
+  background-color: black;
   border-radius: 4px;
   padding: 2px;
-  color: black;
+  color: #40ff00c6;
   text-decoration: none;
 }
 
 button {
   border-radius: 4px;
-  background-color: white;
-  color: black;
+  background-color:black;
+  color: #40ff00c6;
   border: 0px;
   padding: 2px;
   font-size: 16px;
@@ -55,11 +55,12 @@ td {
 }
 
 button:hover {
-  background-color: grey;
-  color: white;
+  color: #5eff00;
+  background-color: black;
+  border: #40ff00c6 solid 1px;
 }
 
 a:hover {
-  background-color: grey;
-  color: white;
+  color: #5eff00;
+  border: #40ff00c6 solid 1px;
 }
