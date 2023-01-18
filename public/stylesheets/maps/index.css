@@ -23,10 +23,21 @@ body {
 #content {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  grid-template-columns: repeat(7, 25%);
+  grid-template-columns: repeat(7, auto);
   grid-auto-flow: column;
-  gap: 1em;
+  gap: 2em;
   align-items: start;
   justify-items: center;
   justify-content: space-evenly;
+}
+
+td a {
+  color: white;
+  text-decoration: none;
+  margin: 6px;
+  border-radius: 4px;
+}
+
+td a:hover {
+  background-color: grey;
 }

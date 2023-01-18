@@ -4,44 +4,9 @@
 
 <main>
   <h1><%= title %> </h1>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/USN_Fleets_%282009%29.png" alt="">
 <div id="content">
-<h2>2nd Fleet</h2>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Battlegroups</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% battlegroups.forEach(battlegroup => { %>
-      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "2nd Fleet") { %>
-        <tr>
-          <td>
-            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
-          </td>
-        </tr>
-          <% } %> 
-    <% }) %>
-  </tbody>
-</table>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Ships</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% ships.forEach(ship => { %>
-      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "2nd Fleet") { %>
-        <tr>
-          <td>
-            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
-          </td>
-        </tr>
-          <% } %> 
-    <% }) %>
-  </tbody>
-</table>
+
 <h2>3rd Fleet</h2>
 <table id="list">
   <thead>
@@ -70,6 +35,43 @@
   <tbody>
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "3rd Fleet") { %>
+        <tr>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>2nd Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "2nd Fleet") { %>
+        <tr>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "2nd Fleet") { %>
         <tr>
           <td>
             <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
@@ -116,43 +118,6 @@
     <% }) %>
   </tbody>
 </table>
-<h2>5th Fleet</h2>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Battlegroups</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% battlegroups.forEach(battlegroup => { %>
-      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "5th Fleet") { %>
-        <tr>
-          <td>
-            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
-          </td>
-        </tr>
-          <% } %> 
-    <% }) %>
-  </tbody>
-</table>
-<table id="list">
-  <thead>
-    <tr>
-      <th>Ships</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% ships.forEach(ship => { %>
-      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "5th Fleet") { %>
-        <tr>
-          <td>
-            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
-          </td>
-        </tr>
-          <% } %> 
-    <% }) %>
-  </tbody>
-</table>
 <h2>6th Fleet</h2>
 <table id="list">
   <thead>
@@ -181,6 +146,43 @@
   <tbody>
     <% ships.forEach(ship => { %>
       <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "6th Fleet") { %>
+        <tr>
+          <td>
+            <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
+          </td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<h2>5th Fleet</h2>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Battlegroups</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% battlegroups.forEach(battlegroup => { %>
+      <% if (user.profile._id.toString() === battlegroup.owner.toString() && battlegroup.aor === "5th Fleet") { %>
+        <tr>
+          <td>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit"><%= battlegroup.name %></a>
+          </td>
+        </tr>
+          <% } %> 
+    <% }) %>
+  </tbody>
+</table>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Ships</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% ships.forEach(ship => { %>
+      <% if (user.profile._id.toString() === ship.owner.toString() && ship.aor === "5th Fleet") { %>
         <tr>
           <td>
             <a href="/ships/<%= ship._id %>/edit"><%= ship.name %></a>
