@@ -38,10 +38,10 @@ main {
   flex-direction: column;
 }
 
-nav > * {
+nav > *:hover {
   background-color: grey;
   color: black;
-  border-radius: 4px;
+  border-radius: 16px;
   text-decoration: none;
   padding: 8px;
 }
@@ -51,7 +51,22 @@ nav > * {
 }
 
 #google-logout{
-  background-color: white;
-  border: black 1px solid;
-  border-radius: 4px;
+  color: #1a1a1a;
+}
+
+#google-logout:hover{
+  background-color: grey;
+  color: white;
+  border-radius: 16px;
+}
+
+#google-logout > *:hover{
+  background-color: grey;
+  color: white;
+  border-radius: 16px;
+}
+
+
+a {
+  color: black
 }
