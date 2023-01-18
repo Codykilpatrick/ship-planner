@@ -96,6 +96,7 @@ a:hover {
 }
 
 #add-battlegroup {
+  background-color: red;
   display: flex;
   flex-direction: column;
 }
