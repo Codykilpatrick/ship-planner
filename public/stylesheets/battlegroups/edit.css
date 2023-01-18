@@ -67,3 +67,13 @@ a:hover {
 h1 {
   text-align: center;
 }
+
+#table {
+  display: flex;
+  justify-content: center;
+}
+
+#add-ship{
+  display: flex;
+  justify-content: center;
+}

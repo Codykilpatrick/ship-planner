@@ -3,6 +3,7 @@
 <%- include('../partials/nav') %>
 
 <h1><%= battlegroup.name %></h1>
+<div id="table">
 <table id="list">
   <thead>
     <tr>
@@ -42,6 +43,7 @@
   </div>
 </tbody>
 </table>
+</div>
 <div id="add-ship">
 <form action="/battlegroups/<%= battlegroup._id %>/ships" method="POST">
   <select name="shipId">
