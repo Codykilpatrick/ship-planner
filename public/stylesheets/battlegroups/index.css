@@ -35,10 +35,15 @@ th, td {
 
 #update-button {
   border-radius: 4px;
-  background-color: white;
   color: black;
+  background-color: white;
   padding: 2px;
-  font-size: 16px;
+  font-weight: 400  ;
+}
+
+#update-button:hover {
+  background-color: grey;
+  color: white;
 }
 
 a.update {
@@ -71,11 +76,8 @@ a:hover {
   color: white;
 }
 
-
 #first-row > * {
-  /* background-color: red; */
   padding: 16px;
-  border-bottom: white solid 4px;
 }
 
 #content {
@@ -87,3 +89,7 @@ a:hover {
   border-bottom: white solid 2px;
 }
 
+#battlegroup-name {
+  background: grey;
+  border-radius: 20px;
+}

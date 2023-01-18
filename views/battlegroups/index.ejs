@@ -9,7 +9,7 @@
       <% battlegroups.forEach(battlegroup => { %>
         <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
         <tr id="first-row">
-          <th><%= battlegroup.name %></th>
+          <th id="battlegroup-name"><%= battlegroup.name %></th>
           <th><%= battlegroup.aor %></th>
           <th>
             <a href="/battlegroups/<%= battlegroup._id %>/edit" id="update-button">UPDATE</a>
