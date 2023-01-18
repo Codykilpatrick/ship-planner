@@ -1,4 +1,5 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/battlegroups/index.css"/>
 <%- include('../partials/nav') %>
 
 <main>
@@ -7,11 +8,11 @@
     <thead>
       <% battlegroups.forEach(battlegroup => { %>
         <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
-        <tr>
+        <tr id="first-row">
           <th><%= battlegroup.name %></th>
           <th><%= battlegroup.aor %></th>
           <th>
-            <a href="/battlegroups/<%= battlegroup._id %>/edit">UPDATE</a>
+            <a href="/battlegroups/<%= battlegroup._id %>/edit" id="update-button">UPDATE</a>
           </th>
           <th>
             <form action="/battlegroups/<%= battlegroup._id %>?_method=DELETE" method="POST">
@@ -19,20 +20,19 @@
             </form>
           </th>
         </tr>
-        <tr>
+        <tr id="subheader">
         <th></th>
-        <th>Name</th>
-        <th>Class</th>
-        <th>Location</th>
-        <th>Ammo</th>
-        <th>Fuel</th>
-        <th>Days Underway</th>
-        
+          <th>Name</th>
+          <th>Class</th>
+          <th>Location</th>
+          <th>Ammo</th>
+          <th>Fuel</th>
+          <th>Days Underway</th>
       </tr>
     </thead>
     <tbody>
         <% battlegroup.ships.forEach(ship => { %>
-          <tr>
+          <tr id="content">
           <td></td>
           <td><%= ship.name %></td>
           <td><%= ship.class %> </td>
