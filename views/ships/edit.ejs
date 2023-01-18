@@ -1,9 +1,11 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/ships/new.css"/>
 <%- include('../partials/nav') %>
 
 <% if (user) { %> 
   <h2>Edit Ship</h2>
   <form action="/ships/<%= ship._id %>?_method=PUT" method="POST">
+    <div id="head">
     <label>
       Name: 
       <input type="text" name="name" autocomplete="off" value="<%= ship.name %>">
@@ -22,6 +24,9 @@
       <input type="text" name="location" autocomplete="off"
       value="<%= ship.location %>">
     </label>
+  </div>
+  <div id="content">
+    <div id="box1">
     <label>
       Fuel:
       <input type="number" name="fuel" autocomplete="off"
@@ -41,11 +46,12 @@
       <option value="5th Fleet">5th Fleet</option>
       <option value="7th Fleet">7th Fleet</option>
     </select>
-
     <label>
       Characteristics:
       <input type="text" name="characteristics" autocomplete="off" value="<%= ship.characteristics %>">
     </label>
+    </div>
+    <div id="box2">
     <label>
       Ammo Remaining:
       <input type="text" name="ammo" autocomplete="off"
@@ -67,6 +73,8 @@
     name="independentSteaming" 
     <%= ship.independentSteaming ? 'checked' : '' %>
     id="independent-steaming-checkbox" >
+    </div>
+    </div>
     <button type="submit">Update Ship</button>
   </form>
 <% } %>

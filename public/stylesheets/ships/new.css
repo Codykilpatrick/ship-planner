@@ -55,6 +55,10 @@ button:hover {
   flex-direction: column;
 }
 
+label {
+  font-size: x-large;
+}
+
 h2 {
   display: flex;
   justify-content: center;
