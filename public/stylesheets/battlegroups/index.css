@@ -95,11 +95,6 @@ a:hover {
   border-radius: 20px;
 }
 
-#add-battlegroup {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-}
 
 #add-battlegroup > * {
   padding: 8px;
@@ -111,6 +106,13 @@ a:hover {
   align-items: flex-start;
   padding: 20px;
   font-size: 24px;
+}
+
+#add-battlegroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #new-bg-form > * {
