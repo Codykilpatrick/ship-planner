@@ -1,8 +1,10 @@
 <%- include('./partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/maps/index.css"/>
 <%- include('./partials/nav') %>
 
 <main>
-<h1><%= title %> </h1>
+  <h1><%= title %> </h1>
+<div id="content">
 <h2>2nd Fleet</h2>
 <table id="list">
   <thead>
@@ -225,6 +227,7 @@
     <% }) %>
   </tbody>
 </table>
+</div>
 </main>
 
 <%- include('./partials/footer') %>
