@@ -63,3 +63,7 @@ a:hover {
   background-color: grey;
   color: white;
 }
+
+h1 {
+  text-align: center;
+}
