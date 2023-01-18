@@ -9,6 +9,7 @@
         <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
         <tr>
           <th><%= battlegroup.name %></th>
+          <th><%= battlegroup.aor %></th>
           <th>
             <a href="/battlegroups/<%= battlegroup._id %>/edit">UPDATE</a>
           </th>
