@@ -38,7 +38,8 @@ th, td {
   color: black;
   background-color: white;
   padding: 2px;
-  font-weight: 400  ;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 #update-button:hover {
@@ -86,7 +87,7 @@ a:hover {
 
 #subheader > * {
   /* background-color: blue; */
-  border-bottom: white solid 2px;
+  border-bottom: white solid 4px;
 }
 
 #battlegroup-name {
@@ -116,4 +117,8 @@ a:hover {
 
 h2 {
   border-bottom: 1px solid white;
+}
+
+input {
+  border-radius: 4px;
 }
