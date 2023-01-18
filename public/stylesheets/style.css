@@ -21,14 +21,15 @@ body {
 }
 
 nav {
-  background-color: #f6f6f6;
-  color: #1a1a1a;
+  background-color: black;
+  color:  #40ff00c6;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 10px;
   min-height: 60px;
   gap: 40px;
+  border-bottom: solid #40ff00c6 2px;
 }
 
 main {
@@ -39,8 +40,7 @@ main {
 }
 
 nav > *:hover {
-  background-color: grey;
-  color: black;
+  color: #40ff00c6;
   border-radius: 16px;
   text-decoration: none;
   padding: 8px;
@@ -51,36 +51,20 @@ nav > *:hover {
 }
 
 #google-logout{
-  color: #1a1a1a;
+  color: #40ff00c6;
 }
 
-#google-logout:hover{
-  background-color: grey;
-  color: white;
-  border-radius: 16px;
-}
-
-#google-logout > *:hover{
-  background-color: grey;
-  color: white;
-  border-radius: 16px;
-}
 
 
 a {
-  color: black
+  color: #40ff00c6;
 }
 
 button {
   border-radius: 4px;
   background-color: white;
-  color: black;
+  color: #40ff00c6;
   border: 0px;
   padding: 2px;
   font-size: 16px;
-}
-
-button:hover {
-  background-color: grey;
-  color: white;
 }

@@ -13,7 +13,7 @@ html {
 
 body {
   background-color: black;
-  color: #40ff00c6;
+  color: #40ff0088;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -37,7 +37,7 @@ a.update {
   background-color: black;
   border-radius: 4px;
   padding: 2px;
-  color: #40ff00c6;
+  color: #40ff00f4;
   text-decoration: none;
 }
 
@@ -63,4 +63,8 @@ button:hover {
 a:hover {
   color: #5eff00;
   border: #40ff00c6 solid 1px;
+}
+
+h1 {
+  color: #40ff00f4;
 }
