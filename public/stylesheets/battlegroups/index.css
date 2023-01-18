@@ -93,3 +93,27 @@ a:hover {
   background: grey;
   border-radius: 20px;
 }
+
+#add-battlegroup {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-battlegroup > * {
+  padding: 8px;
+}
+
+#new-bg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#new-bg-form > * {
+  padding: 8px;
+}
+
+h2 {
+  border-bottom: 1px solid white;
+}

@@ -46,9 +46,9 @@
       <% }) %>
     </tbody>
   </table>
-
     <h2>Add Battle Group</h2>
-    <form action="/battlegroups" method="POST">
+    <form action="/battlegroups" method="POST" id="add-battlegroup">
+      <div id="new-bg-form">
       <label>
         Name: 
         <input type="text" name="name" autocomplete="off" required="required">
@@ -57,7 +57,7 @@
         Location: 
         <input type="text" name="location" autocomplete="off">
       </label>
-      <label for="aor-select">AOR:</label>
+      <label for="aor-select">AOR:
       <select name="aor" id="aor-select"> 
         <option value="3rd Fleet">3rd Fleet</option>
         <option value="2nd Fleet">2nd Fleet</option>
@@ -66,6 +66,8 @@
         <option value="5th Fleet">5th Fleet</option>
         <option value="7th Fleet">7th Fleet</option>
       </select>
+    </div>
+    </label>
       <button type="submit">Add Battlegroup</button>
     </form>
 </main>
