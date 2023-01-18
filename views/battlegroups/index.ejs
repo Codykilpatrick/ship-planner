@@ -5,8 +5,8 @@
 <main>
   <h1>Battle Groups</h1>
   <table id="list">
+    <% battlegroups.forEach(battlegroup => { %>
     <thead>
-      <% battlegroups.forEach(battlegroup => { %>
         <% if (user.profile._id.toString() === battlegroup.owner.toString()) { %>
         <tr id="first-row">
           <th id="battlegroup-name"><%= battlegroup.name %></th>
@@ -31,8 +31,8 @@
       </tr>
     </thead>
     <tbody>
-        <% battlegroup.ships.forEach(ship => { %>
-          <tr id="content">
+      <% battlegroup.ships.forEach(ship => { %>
+        <tr id="content">
           <td></td>
           <td><%= ship.name %></td>
           <td><%= ship.class %> </td>
@@ -43,8 +43,8 @@
         </tr>
         <% }) %>
         <% } %>
-      <% }) %>
-    </tbody>
+        <% }) %>
+      </tbody>
   </table>
     <h2>Add Battle Group</h2>
     <form action="/battlegroups" method="POST" id="add-battlegroup">
