@@ -90,3 +90,23 @@ p {
 #bg-image {
   max-height: 70vmin;
 }
+
+button {
+  border-radius: 4px;
+  background-color:black;
+  color: #40ff00c6;
+  border: 0px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+button:hover {
+  color: #5eff00;
+  background-color: black;
+  border: #40ff00c6 solid 1px;
+}
+
+a:hover {
+  color: #5eff00;
+  border: #40ff00c6 solid 1px;
+}
