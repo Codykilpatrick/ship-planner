@@ -67,9 +67,3 @@ button {
   padding: 2px;
   font-size: 16px;
 }
-
-
-#independent-steaming-checkbox > *::before {
-  background-color: red;
-  color: red;
-}

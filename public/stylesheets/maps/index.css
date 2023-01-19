@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #f6f6f6;
+  background-color: black;
+  color: #40ff0088;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -32,12 +32,33 @@ body {
 }
 
 td a {
-  color: white;
+  color: #40ff00f4;
   text-decoration: none;
   margin: 6px;
   border-radius: 4px;
 }
 
 td a:hover {
-  background-color: grey;
+  background-color: black;
+  color: #5eff00;
+  border: 1px solid #40ff00f4;
+}
+
+
+h1 {
+  color:#5eff00;
+}
+
+button {
+  border-radius: 4px;
+  background-color: black;
+  color: #40ff00c6;
+  border: 0px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+button:hover {
+  color: #5eff00;
+  border: 1px solid #40ff00c6;
 }
