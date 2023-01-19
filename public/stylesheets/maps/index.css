@@ -60,3 +60,11 @@ button {
 nav > * {
   text-decoration: underline;
 }
+
+#image {
+  opacity: 60%;
+}
+
+#image > img {
+  border-radius: 400px;
+}
