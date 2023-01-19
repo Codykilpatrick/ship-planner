@@ -5,7 +5,9 @@
 
 ![The map view, displays all ships and battlegroups.](https://i.imgur.com/FonEpSe.png)
 
-The ship planner is deisgned for both wargammers and decision makers alike. The easy to use interface, allows you to create manage and relocate ships or groups of ships at ease. Directing your own fleet of ships has never been so easy!
+ Wargames provide a dynamic environment to explore and examine a variety of challenges and concepts along the strategic, operational and tactical levels. As an educational tool, wargaming fosters critical thinking and innovation, but most of all, it helps prepare tactical leaders for future challenges.
+
+  A decision support system (DSS) is a computerized program used to support determinations, judgments, and courses of action in an organization. A DSS sifts through and analyzes massive amounts of data, compiling comprehensive information that can be used to solve problems and in decision-making.
 
 ## Technologies used 💾
 
