@@ -32,6 +32,10 @@ nav {
   border-bottom: solid #40ff00c6 2px;
 }
 
+h1 {
+  color: #40ff00c6; 
+}
+
 h3 {
   text-align: center;
 }
