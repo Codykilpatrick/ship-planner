@@ -35,7 +35,7 @@ th, td {
 
 #update-button {
   border-radius: 4px;
-  color: #40ff00f4;
+  color: #40ff00c6;
   background-color: black;
   padding: 2px;
   font-weight: 400;
@@ -141,5 +141,9 @@ select {
   background-color: black;
   border: 1px solid #40ff0088;
   border-radius: 4px;
+}
+
+h1 {
+  color:#5eff00;
 }
 
