@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
-  color: #f6f6f6;
+  background-color: black;
+  color: #40ff0088;
   /* Use a system font, if none are available use any found sans-sarif font */
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
@@ -35,20 +35,21 @@ th, td {
 
 #update-button {
   border-radius: 4px;
-  color: black;
-  background-color: white;
+  color: #40ff00f4;
+  background-color: black;
   padding: 2px;
   font-weight: 400;
   text-decoration: none;
 }
 
 #update-button:hover {
-  background-color: grey;
-  color: white;
+  background-color: black;
+  color: #5eff00;
+  border: 1px solid #40ff00f4;
 }
 
 a.update {
-  background-color: white;
+  background-color: black;
   border-radius: 4px;
   padding: 2px;
   color: black;
@@ -56,8 +57,8 @@ a.update {
 
 button {
   border-radius: 4px;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: #40ff00c6;
   border: 0px;
   padding: 2px;
   font-size: 16px;
@@ -68,30 +69,28 @@ td {
 }
 
 button:hover {
-  background-color: grey;
-  color: white;
+  background-color: black;
+  color: #5eff00;
+  border: 1px solid #40ff00f4;
 }
 
 a:hover {
-  background-color: grey;
-  color: white;
+  background-color: black;
+  color: #5eff00;
+  border: 1px solid #40ff00f4;
 }
 
 #first-row > * {
   padding: 16px;
 }
 
-#content {
-  /* background-color: green; */
-}
-
 #subheader > * {
-  /* background-color: blue; */
-  border-bottom: white solid 4px;
+  border-bottom: #40ff00c6 solid 4px;
 }
 
 #battlegroup-name {
-  background: grey;
+  border: 1px solid #40ff00f4;
+  background: black;
   border-radius: 20px;
 }
 
@@ -120,16 +119,27 @@ a:hover {
 }
 
 h2 {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #40ff00c6;
   margin-bottom: -18px;
 }
 
 input {
+  width: 100%;
+  background-color: black;
+  border: 1px solid #40ff0088;
   border-radius: 4px;
+  color: #40ff00c6;
 }
 
 #submit-button {
   width: 50%;
   text-align: center;
+}
+
+select {
+  color:#5eff00;
+  background-color: black;
+  border: 1px solid #40ff0088;
+  border-radius: 4px;
 }
 
