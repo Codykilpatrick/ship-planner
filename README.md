@@ -5,23 +5,24 @@
 ## [Planning materials](https://trello.com/b/7pODgO8h/unit-2-project)
 
 
- Wargames provide a dynamic environment to explore and examine a variety of challenges and concepts along the strategic, operational and tactical levels. As an educational tool, wargaming fosters critical thinking and innovation, but most of all, it helps prepare tactical leaders for future challenges.
+ Wargames provide a dynamic environment to explore and examine a variety of challenges and concepts alon in respect to strategy, operations and tactics. As an educational tool, wargaming fosters critical thinking and innovation, but most of all, it prepares tactical leaders for future challenges.
 
-  A decision support system (DSS) is a computerized program used to support determinations, judgments, and courses of action in an organization. A DSS sifts through and analyzes massive amounts of data, compiling comprehensive information that can be used to solve problems and in decision-making.
+  A decision support system (DSS) is a computerized program used to support determinations, judgments, and courses of action in an organization. A DSS sifts through and analyzes massive amounts of data, compiling comprehensive information that can be used to solve problems and inform decision-making.
 
 ## Technologies used 💾
 
 - CSS
 - JavaScript
-- HTML
+- EJS
 - Git
-- Node
+- Node.js
 - MongoDB
 - Express
+- Mongoose
 
 ## Ice Box 🧊
 
-- [ ] Add ability to see another users ships that are in your AOR
+- [ ] Add ability to see another user's ships that are in your AOR
 - [x] Add filter to ship view
 - [ ] Add API for environmental data
 - [ ] Add user specific CCOIs
