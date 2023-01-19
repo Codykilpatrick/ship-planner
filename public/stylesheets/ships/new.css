@@ -121,29 +121,44 @@ select {
   border-radius: 4px;
 }
 
-/* input[type="checkbox"] {
-  display: none;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-input[type="checkbox"] + label:before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  background-color: #fff;
-  border: 1px solid #000;
-}
-
-input[type="checkbox"]:checked + label:before {
-  background-color: #000;
-}
-
-input[type="checkbox"]:checked + label:after {
-  content: "✔";
-  color: #fff;
-  font-size: 14px;
+/* Hide the browser's default checkbox */
+.container input {
   position: absolute;
-  top: -2px;
-  left: 2px;
-} */
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  border: 1px solid green;
+  border-radius: 4px;
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color:#40ff00f4;
+  content: "";
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
