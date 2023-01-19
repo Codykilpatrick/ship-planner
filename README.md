@@ -1,9 +1,9 @@
 ## Sea Force Coordinator
+![The map view, displays all ships and battlegroups.](https://i.imgur.com/FonEpSe.png)
 
 ## [Try it Here](https://ship-planner.fly.dev/) 
 ## [Planning materials](https://trello.com/b/7pODgO8h/unit-2-project)
 
-![The map view, displays all ships and battlegroups.](https://i.imgur.com/FonEpSe.png)
 
  Wargames provide a dynamic environment to explore and examine a variety of challenges and concepts along the strategic, operational and tactical levels. As an educational tool, wargaming fosters critical thinking and innovation, but most of all, it helps prepare tactical leaders for future challenges.
 

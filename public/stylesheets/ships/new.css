@@ -120,3 +120,30 @@ select {
   border: 1px solid #40ff0088;
   border-radius: 4px;
 }
+
+/* input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #000;
+}
+
+input[type="checkbox"]:checked + label:after {
+  content: "✔";
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+} */
