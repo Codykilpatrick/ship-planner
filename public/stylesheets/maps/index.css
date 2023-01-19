@@ -31,14 +31,13 @@ body {
   justify-content: space-evenly;
 }
 
-td a {
+a {
   color: #40ff00f4;
   text-decoration: none;
-  margin: 6px;
   border-radius: 4px;
 }
 
-td a:hover {
+a:hover {
   background-color: black;
   color: #5eff00;
   border: 1px solid #40ff00f4;
@@ -58,7 +57,6 @@ button {
   font-size: 16px;
 }
 
-button:hover {
-  color: #5eff00;
-  border: 1px solid #40ff00c6;
+nav > * {
+  text-decoration: underline;
 }
