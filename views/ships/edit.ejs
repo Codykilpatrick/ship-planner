@@ -67,12 +67,11 @@
       <input type="text" name="daysUnderway" autocomplete="off"
       value="<%= ship.daysUnderway %>">
     </label>
-    <label for="independent-steaming-checkbox">Independent Steaming</label>
-    <input 
-    type="checkbox" 
-    name="independentSteaming" 
-    <%= ship.independentSteaming ? 'checked' : '' %>
-    id="independent-steaming-checkbox" >
+    <label for="independent-steaming-checkbox" class="container">Independent Steaming:
+      <input type="checkbox" name="independentSteaming"
+      <%= ship.independentSteaming ? 'checked' : '' %> id="independent-steaming-checkbox">
+      <span class="checkmark"></span>
+    </label>
     </div>
     </div>
     <button type="submit">Update Ship</button>
@@ -80,3 +79,5 @@
 <% } %>
 
 <%- include('../partials/footer') %>
+
+
