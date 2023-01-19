@@ -3,7 +3,7 @@
 ## [Try it Here](https://ship-planner.fly.dev/) 
 ## [Planning materials](https://trello.com/b/7pODgO8h/unit-2-project)
 
-![The starting configuration of the board in Hnefatafl](https://i.imgur.com/6HjgD9J.png)
+![The starting configuration of the board in Hnefatafl](https://i.imgur.com/sOocfcW.png)
 
 The ship planner is deisgned for both wargammers and decision makers alike. The easy to use interface, allows you to create manage and relocate ships or groups of ships at ease. Directing your own fleet of ships has never been so easy!
 
