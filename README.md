@@ -1,4 +1,4 @@
-## Hnefatafl
+## Navy Planner
 
 ## [Try it Here](https://ship-planner.fly.dev/) 
 ## [Planning materials](https://trello.com/b/7pODgO8h/unit-2-project)
